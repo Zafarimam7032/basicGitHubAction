@@ -1,1 +1,13 @@
 name: Sequnce-Job
+on: workflow_dispatch
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    run: echo "verify job"
+  build:
+    runs-on: ubuntu-latest
+    run: echo "build job"
+  deploy:
+    runs-on: ubuntu-latest
+    run: echo "deployment job"
