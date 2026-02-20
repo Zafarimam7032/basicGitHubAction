@@ -9,11 +9,13 @@ jobs:
         run: echo "verify job"
   build:
     runs-on: ubuntu-latest
+    needs: verify
     steps:
       - name: build
         run: echo "build job"
   deploy:
     runs-on: ubuntu-latest
+    needs: build
     steps:
       - name: deploy
         run: echo "deployment job"
