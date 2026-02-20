@@ -4,10 +4,16 @@ on: workflow_dispatch
 jobs:
   verify:
     runs-on: ubuntu-latest
-    run: echo "verify job"
+    steps:
+      - name: verify
+        run: echo "verify job"
   build:
     runs-on: ubuntu-latest
-    run: echo "build job"
+    steps:
+      - name: build
+        run: echo "build job"
   deploy:
     runs-on: ubuntu-latest
-    run: echo "deployment job"
+    steps:
+      - name: deploy
+        run: echo "deployment job"
