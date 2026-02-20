@@ -1,10 +1,11 @@
-name: Basic
+name: Basic githubaction
 on: workflow_dispatch:
 
 jobs:
-  build:
+  hello:
     runs-on: ubuntu-latest
 
     steps:
       - name: FirstAction
-        run: echo Hello, world!
+        run: |
+          echo "Hello, world!"
