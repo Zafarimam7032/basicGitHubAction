@@ -11,7 +11,7 @@ jobs:
     needs: verify
     steps:
       - name: build
-        run: echo "build job verify"
+        run: mvn clean install
   deploy:
     runs-on: ubuntu-latest
     needs: build
