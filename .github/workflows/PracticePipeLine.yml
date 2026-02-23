@@ -1,0 +1,7 @@
+name: practice
+on: push
+jobs:
+  buid:
+    runs-on: windows-latest
+    steps:
+      - run: echo "this is demo for practice job"
